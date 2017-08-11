@@ -1,11 +1,4 @@
-# require 'forwardable'
-
 module Subject
-  # extend Forwardable
-
-  # def_instance_delegator :@observers, :<<, :add_observer
-  # def_instance_delegator :@observers, :delete, :delete_observer
-
   def initialize
     @observers = []
   end

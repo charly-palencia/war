@@ -1,4 +1,5 @@
 require './mixins/subject'
+require './models/utils/dice'
 require './models/player'
 require './models/combat'
 require './models/war'

@@ -9,13 +9,11 @@ class Combat
 
   def fight!
     while (@attacker.alive? && @defender.alive?) do
-      attack = @attacker.roll_dice
-      defense = @defender.roll_dice
+      attack = Dice.roll(sides=6)
+      defense = Dice.roll(sides=6)
 
       if attack > defense
         @defender.hit!
-      elsif attack < defense
-        @attacker.hit!
       else
         @attacker.hit!
       end

@@ -1,8 +1,9 @@
-require './mixins/subject'
-require './models/player'
-require './models/combat'
-require './models/war'
+require './app'
 
 #only for exact qty of players
-# war = War.new(10, 10)
-# war.begin!
+war = War.new(10, 10)
+war.begin
+
+puts('')
+puts("=" * 23)
+puts(war.winner_team)

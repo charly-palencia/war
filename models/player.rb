@@ -14,8 +14,4 @@ class Player
   def hit!
     @life_points-=1
   end
-
-  def roll_dice
-    rand(6) + 1
-  end
 end
